@@ -18,7 +18,22 @@ public class C01_WebDriverManagerTest {
         WebDriverManager.chromedriver().setup();
 
         WebDriver driver =new ChromeDriver();
+        // windowsimuzu maximize ettik
+        driver.manage().window().maximize();
+        // goog anasayfamizi actik
+        driver.get("https://www.google.com/");
 
+        // title imizi indirdik
+        String title = driver.getTitle();
+
+        // titlemizi dogruladik
+        if (title.equalsIgnoreCase("google")) {
+            System.out.println("TITLE TEST PASSED" );
+        } else {
+            System.out.println("TITLE TEST FAILED" );
+        }
+        // driverimizi kapattik
+        driver.quit();
 
 
     }
