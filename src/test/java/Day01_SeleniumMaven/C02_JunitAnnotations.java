@@ -12,7 +12,7 @@ public class C02_JunitAnnotations {
     // Her testimizden once ve sonra calismasi gereken kod bloklarimiz (methodlarimiz) mevcut
     // Tum testlerin oncesinde ve sonrasinda calismasi gereken methodlarimiz mevcut.
 
-    //        1. @Test -> Marks a method as a TEST CASE.
+    //    1. @Test -> Marks a method as a TEST CASE.
 //        2. @Before : Runs before EACH @Test annotation.
 //        3. @After : Runs after EACH @Test annotation.
 //        4. @BeforeClass : Runs before each class only once.
