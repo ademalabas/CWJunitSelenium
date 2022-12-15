@@ -15,12 +15,22 @@ public class C01_Locators {
     public void setUp()  {
         WebDriverManager.chromedriver().setup();
          driver=new ChromeDriver();
+
+        //LinkedIn sitesine gidildi
          driver.get("https://www.linkedin.com");
+        // driver imiz maximize edildi
+
+        driver.manage().window().maximize();
+
+
     }
 
     @After
     public void tearDown() {
-        driver.quit();
+
+        // driver imiz kapatildi
+       // driver.quit();
+
     }
 
     @Test
@@ -30,6 +40,24 @@ public class C01_Locators {
         email.sendKeys("ClarusWay selenium dersinden selamlar");
 
     }
+
+    @Test
+    public void nameLocator() {
+        //name locator -->session_password
+        WebElement password = driver.findElement(By.name("session_password"));
+        password.sendKeys("ebikgabik");
+
+    }
+
+    @Test
+    public void classLocator() {
+        //class locator -->input__input
+        WebElement email = driver.findElement(By.className("input__input"));
+       email.sendKeys("Class locator Test");
+    }
+
+
+
 
 
 
