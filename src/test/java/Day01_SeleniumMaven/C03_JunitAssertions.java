@@ -42,6 +42,8 @@ public class C03_JunitAssertions {
         //Assert.assertTrue(driver.getTitle().contains("Amazon"));
 
 
+
+
     }
     @Test
     public void titleTest() {
