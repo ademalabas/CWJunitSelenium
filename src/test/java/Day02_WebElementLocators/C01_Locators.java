@@ -90,6 +90,7 @@ public class C01_Locators {
 
     @Test
     public void absoluteXpath() {
+        // xpath locator -->/html/body/......
         WebElement email = driver.findElement(By.xpath("/html/body/main/section[1]/div/div/form/div[2]/div[1]/input"));
         email.sendKeys("Adem absolute xpath kavramini kavradi");
     }
