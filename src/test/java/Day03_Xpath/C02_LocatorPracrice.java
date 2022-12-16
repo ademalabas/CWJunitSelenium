@@ -2,13 +2,16 @@ package Day03_Xpath;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.nio.file.WatchEvent;
 import java.time.Duration;
 
 public class C02_LocatorPracrice {
@@ -52,7 +55,10 @@ public class C02_LocatorPracrice {
             driver.findElement(By.xpath("//input[@id='session_key']"))
                     .sendKeys("ademalabas"+ Keys.ENTER);
         // 3. Adim Hata mesejinin goruntulendigini dogrula
-
+            WebElement alertmessage =driver.findElement(By.xpath("//p[@class='alert-content']"));
+            Assert.assertTrue(alertmessage.isDisplayed());
+           // Assert.assertEquals(true,alertmessage.isDisplayed());
+           // Assert.assertFalse(!alertmessage.isDisplayed());
 
     }
 
