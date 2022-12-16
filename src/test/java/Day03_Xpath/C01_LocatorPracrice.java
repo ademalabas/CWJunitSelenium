@@ -11,10 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.nio.file.WatchEvent;
 import java.time.Duration;
 
-public class C02_LocatorPracrice {
+public class C01_LocatorPracrice {
 //    Go to https://www.linkedin.com/
 //    When we write an e-mail without the @ sign in the e-mail box and press enter.
 //    Let's test the "Invalid email address" warning.
@@ -57,6 +56,7 @@ public class C02_LocatorPracrice {
         // 3. Adim Hata mesejinin goruntulendigini dogrula
             WebElement alertmessage =driver.findElement(By.xpath("//p[@class='alert-content']"));
             Assert.assertTrue(alertmessage.isDisplayed());
+           // Assert.assertTrue("Adem",alertmessage.isDisplayed());
            // Assert.assertEquals(true,alertmessage.isDisplayed());
            // Assert.assertFalse(!alertmessage.isDisplayed());
 
