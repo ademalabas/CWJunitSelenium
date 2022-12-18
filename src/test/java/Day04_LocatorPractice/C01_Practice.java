@@ -26,7 +26,9 @@ public class C01_Practice {
 // And then verify Submitted Values is displayed open page
 // Close driver.
 
+
 WebDriver driver;
+
 
 @Before
     public void setUp() {
@@ -37,6 +39,7 @@ WebDriver driver;
     driver.manage().window().maximize();
 
 }
+
 
 @After
     public void tearDown() {

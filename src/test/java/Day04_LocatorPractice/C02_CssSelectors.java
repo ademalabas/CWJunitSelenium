@@ -15,6 +15,7 @@ import java.util.List;
 
 public class C02_CssSelectors {
 
+
 //http://the-internet.herokuapp.com/add_remove_elements/
 // Click on the "Add Element" button 100 times.
 // Write a function that takes a number, and clicks the "Delete" button.
@@ -27,6 +28,7 @@ public class C02_CssSelectors {
 
 
 WebDriver driver;
+
 
 
     @Before
@@ -49,6 +51,7 @@ WebDriver driver;
             // test sonrasinda driver kapatacak (varsa raporlari dosyalamak) icin kullanilir
             driver.quit();
     }
+
 
     @Test
     public void cssSelectorTest(){
@@ -74,6 +77,7 @@ WebDriver driver;
             addElementButton.click();
         }
     }
+
 
     public void deleteButtonsAndValidate(int amount){
 
