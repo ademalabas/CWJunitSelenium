@@ -41,20 +41,26 @@ public class C01_RelativeLocator {
         driver.quit();
     }
     @Test
-    public void relativeLocator(){
+    public void relativeLocator() {
         driver.get("http://www.bestbuy.com");
-       // String title = driver.getTitle();
-       // Assert.assertTrue(title.contains("Best"));
+        // String title = driver.getTitle();
+        // Assert.assertTrue(title.contains("Best"));
 
-        Assert.assertTrue("Title Best Kelimesini icermiyor ",driver.getTitle().contains("Best") );
+        Assert.assertTrue("Title Best Kelimesini icermiyor ", driver.getTitle().contains("Best"));
 
-        //logo
-        RelativeLocator.with(By.tagName())
+        //logo locate ediliyor
+        By logoLocator = RelativeLocator.with(By.tagName("img")).above(By.xpath("//div[text()='Hello!']"));
+        WebElement logo = driver.findElement(logoLocator);
+        Assert.assertTrue(logo.isDisplayed());
+
+    // Mexico link locate edilip kontrol ediliyor
+       // By mexicoLinklocator =RelativeLocator.with(By.tagName("a")).toRightOf(By.xpath("//div[@lang='en']//a[@class='us-link']"));
+       // WebElement mexicoLink = driver.findElement(mexicoLinklocator);
+      //  Assert.assertTrue(mexicoLink.isDisplayed());
+        Assert.assertTrue(driver.findElement(RelativeLocator.with(By.tagName("img")).toRightOf(By.xpath("//div[@lang='en']//a[@class='us-link']"))).isDisplayed());
 
 
-
-
-
+    }
 
 
     }
