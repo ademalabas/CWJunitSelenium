@@ -53,6 +53,7 @@ public class Task01 {
 
         WebElement alert = driver.findElement(By.xpath("//div[@class='alert alert-danger']"));
         Assert.assertTrue(alert.isDisplayed());
+        Assert.assertTrue("Kayit Fonksiyonu duzgun calismiyor",alert.getText().contains("There was a problem with your login."));
 
     }
 
