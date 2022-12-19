@@ -40,12 +40,16 @@ public class Task01 {
     public void Homework01(){
         driver.get("https://id.heroku.com/login");
 
+
+
         //Bir mail adresi giriniz.
         WebElement email = driver.findElement(By.xpath("//input[@id='email']"));
         email.sendKeys(" itopdas@gmail.com");
+
         //Bir password giriniz.
         WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
         password.sendKeys("4765900");
+
         //Login butonuna tıklayınız.
         WebElement logIn = driver.findElement(By.xpath("//button[@value='Log In']"));
         logIn.click();

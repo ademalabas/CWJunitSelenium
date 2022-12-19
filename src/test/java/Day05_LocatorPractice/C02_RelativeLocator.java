@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Task01 {
+public class C02_RelativeLocator {
 
     //https://www.teknosa.com/ adresine gidiniz.
 // Arama çubuğuna ''oppo'’ yazıp ENTER tıklayınız.
