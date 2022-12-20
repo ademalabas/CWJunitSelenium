@@ -2,6 +2,7 @@ package Day06_Dropdowm_SeleniumWaits;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -11,12 +12,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C03_Alerts {
+public class C04_BasicAuthentication {
 
-//    driver.switchTo().alert().accept();//ok demek
-//driver.switchTo().alert().dismiss();//cancel demek
-//driver.switchTo().alert().getText();//metni getirir
-//driver.switchTo().alert().sendKeys("");//metin kutusu doldurulur
+
 
     WebDriver driver;
 
@@ -38,19 +36,22 @@ public class C03_Alerts {
         //  driver.quit();
     }
     @Test
-    public void alerts() throws InterruptedException {
-        driver.get("https://demo.guru99.com/test/delete_customer.php");
+    public void basicAut() {
 
-        WebElement idInput = driver.findElement(By.name("cusid"));
-        idInput.sendKeys("123");
+        //Syntax: driver.get("https://USERNAME:PASSWORD@URL");
 
-        driver.findElement(By.name("submit")).click();
-       // Thread.sleep(4000);
-        driver.switchTo().alert().accept();
+        //"https://USERNAME:PASSWORD@URL
 
-        driver.switchTo().alert().accept();
+        driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
+        WebElement content =driver.findElement(By.id("content"));
+        Assert.assertTrue(content.getText().contains("Congratulations"));
 
-    }
+        //Assert.assertTrue(driver.findElement(By.xpath("//div[@id='content']")).isDisplayed());
 
 
     }
+
+
+
+
+}
