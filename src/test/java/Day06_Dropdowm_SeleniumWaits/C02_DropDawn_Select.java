@@ -122,5 +122,18 @@ public class C02_DropDawn_Select {
 
     }
 
+    @Test
+    public void getAllSelectedOptions(){
+        driver.get("https://output.jsbin.com/osebed/2");
+        Select select = new Select(driver.findElement(By.id("fruits")));
+
+        select.selectByValue("banana");
+        select.selectByValue("apple");
+        List<WebElement>selectedOptions = select.getAllSelectedOptions();
+        selectedOptions.forEach(x-> System.out.println(x.getText()));
+
+
+    }
+
 
 }
