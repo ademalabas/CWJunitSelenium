@@ -43,9 +43,14 @@ public class C02_IframeExample {
 // Tüm ikinci emoji öğelerine tıklayınız.
         WebElement secondEmojiTab =driver.findElement(By.xpath("//a[contains(@href,'nature')]"));
         secondEmojiTab.click();
-// Parent iframe geri dönünüz.
+
         List<WebElement> emojilist =driver.findElements(By.xpath("//div[@id='nature']//img"));
+      // for (WebElement a : emojilist) {
+       //      a.click();
+       // }
+
         emojilist.forEach(WebElement::click);
+        // Parent iframe geri dönünüz.
         driver.switchTo().defaultContent();
 
 
