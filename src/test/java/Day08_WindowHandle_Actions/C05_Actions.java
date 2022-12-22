@@ -16,9 +16,11 @@ public class C05_Actions extends BaseTest {
         WebElement accountAndList =driver.findElement(By.id("nav-link-accountList"));
 
         Actions actions = new Actions(driver);
+
+        // Hesaplar ve listeler alaninin ustune gelip siparislerim linkine tikladik
         actions.moveToElement(accountAndList).click(driver.findElement(By.id("nav_prefetch_yourorders"))).perform();
 
-
+        // Amazon login sayfasinin acildigini dogruladik
         Assert.assertEquals("Amazon Giriş Yap", driver.getTitle());
 
 
