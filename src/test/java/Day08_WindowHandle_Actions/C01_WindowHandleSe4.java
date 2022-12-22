@@ -18,29 +18,38 @@ public class C01_WindowHandleSe4 extends BaseTest {
 // https://blog.testproject.io/
 
     @Test
-    public void testWindowHandle() {
+    public void newWindow() {
+
+        // Ana sekmemizde url i ziyaret ediyoruz.
         driver.get("https://testproject.io/");
+
+        // Yeni pencere olusturup o pencereye switch ediyoruz.
         driver.switchTo().newWindow(WindowType.WINDOW);
+
+        // Yeni penceremizde url imizi ziyaret ediyoruz
         driver.get("https://blog.testproject.io/");
 
     }
 
 @Test
         public void newTab(){
-
+    // Ana sekmemizden testproject acildi
         driver.get("https://testproject.io/");
-
+    // Yeni bir sekme olusturuldu
     WebDriver newTab =driver.switchTo().newWindow(WindowType.WINDOW);
-
+    // Yeni sekmeden amazona gidildi
     newTab.get("https//www.amazon.com/");
-    driver.getTitle();
+
+    //Aktif tab in title i yazdirildi -> Aktif tab imiz = yeni olusturulan tab
+    System.out.println("driver.getTitle() = " + driver.getTitle());
 
 
-
-        }
+}
 
 @Test
-    public void handleWindow(){
+    public void handleWindows(){
+
+    // Ana sekmemizde amazon aciliyor
         driver.get("https://www.amazon.com/");
 
         //getwindowhandle()   // getWindowHandles()
@@ -49,10 +58,13 @@ public class C01_WindowHandleSe4 extends BaseTest {
 
     driver.switchTo().newWindow(WindowType.TAB);
 
+    //Yeni sekmemizde amazon tr yi actik
     driver.get("https://www.amazon.com.tr/");
 
+    //Yeni pencere olusturduk.
     driver.switchTo().newWindow(WindowType.WINDOW);
 
+    //Yeni pencerede Google i actik
     driver.get("https://www.google.com/");
 
    Set<String> handles =driver.getWindowHandles();
