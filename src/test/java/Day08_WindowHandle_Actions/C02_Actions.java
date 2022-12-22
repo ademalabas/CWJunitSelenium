@@ -9,12 +9,17 @@ import org.openqa.selenium.interactions.Actions;
 import utilities.BaseTest;
 
 public class C02_Actions extends BaseTest {
+    @Override
+    public void tearDown() {
 
+    }
 
     @Test
     public void doubleclick() {
         driver.get("https://demoqa.com/buttons");
+
         WebElement doubleclick =driver.findElement(By.id("doubleClickBtn"));
+
         Actions actions = new Actions(driver);
         actions.doubleClick(doubleclick).perform();
 
@@ -25,8 +30,11 @@ public class C02_Actions extends BaseTest {
     @Test
     public void rigthclick() {
         driver.get("https://demoqa.com/buttons");
+
+        //rightClickBtn
         WebElement rightleclick =driver.findElement(By.id("rightClickBtn"));
         Actions actions = new Actions(driver);
+
         actions.contextClick(rightleclick).build().perform();
 
         WebElement rightClickMessage = driver.findElement(By.id("rightClickMessage"));
@@ -39,9 +47,12 @@ public class C02_Actions extends BaseTest {
     public void click() {
 
             driver.get("https://demoqa.com/buttons");
+
             WebElement clickBtn =driver.findElement(By.xpath("//button[.='Click Me']"));
             Actions actions = new Actions(driver);
+
             actions.click(clickBtn).build().perform();
+
             WebElement dynamicClickMessage =driver.findElement(By.id("dynamicClickMessage"));
             Assert.assertTrue(dynamicClickMessage.isDisplayed());
 

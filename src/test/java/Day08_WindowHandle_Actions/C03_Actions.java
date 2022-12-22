@@ -13,7 +13,7 @@ public class C03_Actions extends BaseTest {
     public void dragAndDrop() {
 
         driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
-// drag
+// drag elements
         WebElement washingrion = driver.findElement(By.id("box3"));
         WebElement copenhagen = driver.findElement(By.id("box4"));
         WebElement seoul = driver.findElement(By.id("box5"));
@@ -22,7 +22,7 @@ public class C03_Actions extends BaseTest {
         WebElement oslo = driver.findElement(By.id("box1"));
         WebElement stockholm = driver.findElement(By.id("box2"));
 
-     //   drop
+     //   drop elements
         WebElement italy = driver.findElement(By.id("box106"));
         WebElement spain = driver.findElement(By.id("box107"));
         WebElement norway = driver.findElement(By.id("box101"));
@@ -37,10 +37,11 @@ public class C03_Actions extends BaseTest {
         actions.dragAndDrop(washingrion,us).build().perform();
         actions.dragAndDrop(rome,italy).build().perform();
         actions.dragAndDrop(copenhagen,denmark).build().perform();
-        actions.dragAndDrop(stockholm,sweden).build().perform();
 
-        // coklu kullanim
-        actions.dragAndDrop(seoul,soutKorea).dragAndDrop(oslo,norway).perform();
+        //method zinciri seklinde kullanim
+        actions.dragAndDrop(seoul,soutKorea)
+                .dragAndDrop(oslo,norway)
+                .dragAndDrop(stockholm,sweden).build().perform();;
 
 
 
