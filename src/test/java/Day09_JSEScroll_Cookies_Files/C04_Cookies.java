@@ -30,7 +30,7 @@ Delete All Cookies.
        // Find the total number of cookies.
         Set<Cookie> allCookies =driver.manage().getCookies();
         int numOfCookies = allCookies.size();
-        System.out.println("numOfCookies = " + numOfCookies);
+        System.out.println("numOfCookies = " + numOfCookies);// number of cookie 2
 
 
 
@@ -42,7 +42,7 @@ Delete All Cookies.
         }
         //Add Cookie.
         System.out.println("add cookie : ");
-        Cookie cookie1 = new Cookie("fruit", "apple");
+        Cookie cookie1 = new Cookie("fruit", "apple");// coolie olusturduk
         driver.manage().addCookie(cookie1);
         Assert.assertEquals("It does not match",cookie1.getValue(),driver.manage().getCookieNamed(cookie1.getName()).getValue());
 
@@ -68,21 +68,21 @@ Delete All Cookies.
         driver.get("https://kitchen.applitools.com/ingredients/cookie");
         Set<Cookie> allCookies =driver.manage().getCookies();
         int numOfCookies = allCookies.size();
-        System.out.println("numOfCookies = " + numOfCookies);
+        System.out.println("numOfCookies = " + numOfCookies);// number of cookie 2
 
 
 
 
-        Cookie adddedCookie = new Cookie("drinks","ayran");
-        driver.manage().addCookie(adddedCookie);
+        Cookie adddedCookie = new Cookie("drinks","ayran");// cookie olusturduk
+        driver.manage().addCookie(adddedCookie);// cookie ekledik
         allCookies =driver.manage().getCookies(); // guncel cookileri dondurur
         System.out.println("allCookies.size() = " + allCookies.size());// number of cookie 3
 
         System.out.println("delete cookie");
-        driver.manage().deleteCookie(adddedCookie);
-        Assert.assertNull("cookie halen var",driver.manage().getCookieNamed(adddedCookie.getName()));
+        driver.manage().deleteCookie(adddedCookie);// cookie sildik
+        Assert.assertNull("cookie halen var",driver.manage().getCookieNamed(adddedCookie.getName()));//Passed
         allCookies =driver.manage().getCookies(); // guncel cookileri dondurur
-        System.out.println("allCookies.size() = " + allCookies.size());// number of cookie 3
+        System.out.println("allCookies.size() = " + allCookies.size());// number of cookie 2
 
         driver.manage().deleteAllCookies(); //browserdan hepsi sildik
         allCookies = driver.manage().getCookies(); // sayfada var olan cookieleri dondurur
