@@ -8,7 +8,7 @@ import utilities.BaseTest;
 
 import java.util.List;
 
-public class Task_10 extends BaseTest {
+public class Task_10_AmazonAramaZonucYazdirma extends BaseTest {
 
 
     @Test
