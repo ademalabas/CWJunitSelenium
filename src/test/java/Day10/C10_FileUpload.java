@@ -22,7 +22,7 @@ Verify the upload message.
 
         //Upload edilecek dosyamizi seciyoruz
         WebElement dosyaSec = driver.findElement(By.id("file-upload"));
-        dosyaSec.sendKeys("C:\\Users\\user\\Desktop\\fileExist.png");
+        dosyaSec.sendKeys("C:\\Users\\hi\\Desktop\\fileExist.png");
 
         // Upload butonuna basiyoruz
         WebElement uploadFile = driver.findElement(By.id("file-submit"));
