@@ -9,8 +9,14 @@ import utilities.BaseTest;
 public class C09_FileDownload extends BaseTest {
 
 
+    @Override
+    public void tearDown() {
+
+    }
+
     @Test
     public void test() {
+
         //Go to URL: https://opensource-demo.orangehrmlive.com/
         //Login page valid credentials.
        // Download sample CSV file.

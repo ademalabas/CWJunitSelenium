@@ -13,12 +13,17 @@ public class C08_FileExist {
     public void fileExists () {
 // C:\Users\hi\Desktop\fileExist.png
 
-    System.out.println("System.getProperty(\"user.home\") = " + System.getProperty("user.home"));
-String homePath = System.getProperty("user.home");
-String filePath ="\\Desktop\\fileExist.png";
-String fullPath = homePath + filePath;
-File image = new File(fullPath);
-    Assert.assertTrue(image.exists());
+    System.out.println(System.getProperty("user.home"));// Home yolunu yazdirdik
+String homePath = System.getProperty("user.home");// Home yolunu atadik
+
+String filePath ="\\Desktop\\fileExist.png";// Dosyanin kalan yolunu atadik
+
+    String fullPath = homePath + filePath;// home ve dosya yollarini birlestirip full path i elde ettik
+
+    File image = new File(fullPath); // Path imizi file a cevirdik
+
+    Assert.assertTrue(image.exists());// exists metoduyla varolup olmadigini kontrol ettik
+
 
 }
 
