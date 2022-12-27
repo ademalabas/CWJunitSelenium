@@ -33,9 +33,11 @@ Verify the upload message.
 
         // Upload edilme mesajinin goruntulendigini dogruluyoruz
         WebElement uploadedMessage = driver.findElement(By.tagName("h3"));
+
        //List< WebElement> uploadedMessage = driver.findElements(By.tagName("h3"));
         //Boolean isPresent = driver.findElements().size() > 0
         Assert.assertTrue(uploadedMessage.isDisplayed());
+
         Assert.assertEquals("File Uploaded!" ,uploadedMessage.getText());
 
 

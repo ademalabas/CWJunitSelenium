@@ -21,11 +21,14 @@ public class C09_FileDownload extends BaseTest {
     @Test
     public void test() throws InterruptedException {
 
+
         //Go to URL: https://opensource-demo.orangehrmlive.com/
         //Login page valid credentials.
        // Download sample CSV file.
        // Verify if the file downloaded successfully.
+
         driver.get("https://opensource-demo.orangehrmlive.com/");
+
 
         // Sisteme giris yapiyoruz
         WebElement username = driver.findElement(By.name("username"));
