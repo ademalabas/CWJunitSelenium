@@ -31,7 +31,7 @@ public class C02_WriteExcelExample02 {
     public void changeExcelData() throws IOException {
 
         //Dosyamizin path ini aldik
-        String filePath = "src/test/java/resources/excelData.xlsx";
+        String filePath = "src\\test\\java\\resources\\excelData.xlsx";
 
         // Pathimizden file olusturduk
         File file = new File(filePath);

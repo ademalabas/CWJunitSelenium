@@ -18,7 +18,7 @@ public class C11_AssertElementTrick extends BaseTest {
 
         //Upload edilecek dosyamizi seciyoruz
         WebElement dosyaSec = driver.findElement(By.id("file-upload"));
-        dosyaSec.sendKeys("C:\\Users\\user\\Desktop\\fileExist.png");
+        dosyaSec.sendKeys("C:\\Users\\hi\\Desktop\\fileExist.png");
 
         // Upload butonuna basiyoruz
         WebElement uploadFile = driver.findElement(By.id("file-submit"));
@@ -27,7 +27,7 @@ public class C11_AssertElementTrick extends BaseTest {
         //Yeniden implement edecegiz
 
         // Elementin locator unu ozellikle yanlis yazip durumu nasil handle ettigimizi kontrol ediyoruz
-        List<WebElement> uploadedMessageList = driver.findElements(By.tagName("h9"));
+        List<WebElement> uploadedMessageList = driver.findElements(By.tagName("h3"));
         Assert.assertEquals("Upload mesaji goruntulenemedi",1, uploadedMessageList.size());
 
         WebElement uploadMessage = uploadedMessageList.get(0);
