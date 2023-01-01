@@ -1,4 +1,4 @@
-package Day10;
+package Day10_Files;
 
 import org.junit.Assert;
 import org.junit.Test;

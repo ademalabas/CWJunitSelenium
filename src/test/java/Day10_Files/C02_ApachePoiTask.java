@@ -1,11 +1,10 @@
-package Day10;
+package Day10_Files;
 
 import org.apache.poi.ss.usermodel.*;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;

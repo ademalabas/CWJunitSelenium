@@ -1,9 +1,8 @@
-package Day10;
+package Day10_Files;
 
 import org.apache.poi.ss.usermodel.*;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class C01_ExcelMethods {

@@ -1,4 +1,4 @@
-package Day10;
+package Day10_Files;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -11,7 +11,7 @@ public class C07_FileExist {
         System.out.println(System.getProperty("user.dir"));// projenin yolunu8 verir
           String projectRoot =System.getProperty("user.dir");// Bulmak istedigimiz
         // file proje icerisinde oldugundan proje yolunu aldik
-   String filePath ="src/test/java/resources/fileExist.jpg" ;// Bulmak istedigimiz
+   String filePath ="\\src\\test\\java\\resources\\fileExist.jpg" ;// Bulmak istedigimiz
         // dosyanin proje klasorunden sonraki yolunu aldik (Copy path from content root)
    filePath =projectRoot +filePath;
         Files.exists(Paths.get(filePath));//Almis oldugumuz 2 yolu birlestirip
