@@ -9,6 +9,7 @@ import utilities.BaseTest;
 public class C10_FileUpload extends BaseTest {
 
 
+
     @Test
     public void FileUploadTest()  {
 
@@ -24,6 +25,7 @@ Verify the upload message.
         WebElement dosyaSec = driver.findElement(By.id("file-upload"));
         dosyaSec.sendKeys("C:\\Users\\hi\\Desktop\\fileExist.png");
 
+
         // Upload butonuna basiyoruz
         WebElement uploadFile = driver.findElement(By.id("file-submit"));
         uploadFile.click();
@@ -31,6 +33,7 @@ Verify the upload message.
 
         // Upload edilme mesajinin goruntulendigini dogruluyoruz
         WebElement uploadedMessage = driver.findElement(By.tagName("h3"));
+
 
        //List< WebElement> uploadedMessage = driver.findElements(By.tagName("h3"));
         //Boolean isPresent = driver.findElements().size() > 0
