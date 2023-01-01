@@ -17,6 +17,7 @@ public class C09_FileDownload extends BaseTest {
 
     }
 
+
     @Test
     public void test() throws InterruptedException {
 
@@ -25,6 +26,7 @@ public class C09_FileDownload extends BaseTest {
         //Login page valid credentials.
        // Download sample CSV file.
        // Verify if the file downloaded successfully.
+
 
         driver.get("https://opensource-demo.orangehrmlive.com/");
 
@@ -59,10 +61,7 @@ public class C09_FileDownload extends BaseTest {
 
         // Dosyanin indirildigini kontrol ediyoruz
         Assert.assertTrue("Indirilen dosya bulunamadi", Files.exists(Paths.get(downloadPath)));
-
     }
-
-
 
 
     }
