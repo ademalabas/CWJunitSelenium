@@ -7,6 +7,15 @@ import utilities.BaseTest;
 
 public class C03_WebTables extends BaseTest {
 
+
+    /*
+    Go to URL: http://demo.guru99.com/test/web-table-element.php
+To find third row of table
+To get 3rd row's 2nd column data
+Get all the values of a Dynamic Table
+     */
+
+
     @Test
     public void webTableExample(){
 
@@ -39,7 +48,7 @@ public class C03_WebTables extends BaseTest {
                 By locator = By.xpath(".//tr["+ i +"]//td[" + j + "]");
                 WebElement tableData = table.findElement(locator);
 
-                System.out.print(tableData.getText() + " ");
+                System.out.print(tableData.getText() + "     ");
             }
 
             System.out.println();
