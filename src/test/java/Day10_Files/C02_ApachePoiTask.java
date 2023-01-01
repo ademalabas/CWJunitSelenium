@@ -11,7 +11,8 @@ import java.util.Map;
 
 public class C02_ApachePoiTask {
 
-@Test
+
+    @Test
     public  void apacheTask() throws IOException {
 
     /*
@@ -45,11 +46,11 @@ Print country, area key value pairs as map object.
 
     //    Go to first cell on that first row and print.
     Cell row1cell1 = row1.getCell(0);
-    System.out.println("row1 cell1 = " + row1cell1);
+    System.out.println("row1 cell1 = " + row1cell1);// country
 
     //    Go to second cell on that first row and print.
     Cell row1cell2 = row1.getCell(1);
-    System.out.println("row1 cell2 = " + row1cell2);
+    System.out.println("row1 cell2 = " + row1cell2);// Area
 
     //    Go to 2nd row first cell and assert if the data equal to Russia.
     Row row2 = sheet1.getRow(1);
