@@ -1,4 +1,4 @@
-package Day11_ApachePOI_ScreenShot;
+package Day12_ScreenShots;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

@@ -1,4 +1,4 @@
-package Day11_ApachePOI_ScreenShot;
+package Day12_ScreenShots;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;
@@ -18,13 +18,13 @@ public class C02_Screenshots extends BaseTest {
 
     @Test
     public void getPageScreenshot() throws IOException {
-        driver.get("https://www.n11.com/");
+        driver.get("https://www.teknosa.com/");
 
         //Screenshot umuzu File class indan bir objeye aliyoruz
         File kaynak = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 
         // Aldigimiz screenshot istedigimiz path e kaydediyoruz
-        FileHandler.copy(kaynak, new File("test-output/Screenshots/n11PageScreenshot.png"));
+        FileHandler.copy(kaynak, new File("test-output/Screenshots/teknosaPageScreenshot.png"));
     }
 
     @Test

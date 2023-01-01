@@ -1,4 +1,4 @@
-package Day11_ApachePOI_ScreenShot;
+package Day12_ScreenShots;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;

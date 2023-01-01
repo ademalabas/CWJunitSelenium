@@ -27,7 +27,7 @@ public class C11_AssertElementTrick extends BaseTest {
         //Yeniden implement edecegiz
 
         // Elementin locator unu ozellikle yanlis yazip durumu nasil handle ettigimizi kontrol ediyoruz
-        List<WebElement> uploadedMessageList = driver.findElements(By.tagName("h3"));
+        List<WebElement> uploadedMessageList = driver.findElements(By.tagName("h9"));
         Assert.assertEquals("Upload mesaji goruntulenemedi",1, uploadedMessageList.size());
 
         WebElement uploadMessage = uploadedMessageList.get(0);
