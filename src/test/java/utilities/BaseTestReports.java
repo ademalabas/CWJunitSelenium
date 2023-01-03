@@ -11,11 +11,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
-public abstract class BaseTestReport {
+public class BaseTestReports {
 
-   protected WebDriver driver;
-   protected ExtentReports extentReports;// raporlama islemini gercklestirir
+
+    protected WebDriver driver;
+    protected ExtentReports extentReports;// raporlama islemini gercklestirir
     protected ExtentHtmlReporter extentHtmlReporter; //Raporu Html olarak duzenler
     protected ExtentTest extentTest; // testimizin  pass veya fail oldugunu saklayan objemiz. Ekran goeuntuleri icin de kullanilir
 
@@ -59,6 +61,7 @@ public abstract class BaseTestReport {
         driver.quit();
         extentReports.flush();
     }
+
 
 
 
