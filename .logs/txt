@@ -2,3 +2,13 @@
 2023-01-03 15:14:33 WARN  C02_Log4jDemo:16 - Warn Message
 2023-01-03 15:14:33 ERROR C02_Log4jDemo:17 - Error Message
 2023-01-03 15:14:33 FATAL C02_Log4jDemo:18 - Fatal Message
+2023-01-03 15:17:31 INFO  C02_Log4jDemo:15 - Info Message
+2023-01-03 15:17:31 WARN  C02_Log4jDemo:16 - Warn Message
+2023-01-03 15:17:31 ERROR C02_Log4jDemo:17 - Error Message
+2023-01-03 15:17:31 FATAL C02_Log4jDemo:18 - Fatal Message
+2023-01-03 15:19:05 TRACE C02_Log4jDemo:13 - Trace Message
+2023-01-03 15:19:05 DEBUG C02_Log4jDemo:14 - Debug Message
+2023-01-03 15:19:05 INFO  C02_Log4jDemo:15 - Info Message
+2023-01-03 15:19:05 WARN  C02_Log4jDemo:16 - Warn Message
+2023-01-03 15:19:05 ERROR C02_Log4jDemo:17 - Error Message
+2023-01-03 15:19:05 FATAL C02_Log4jDemo:18 - Fatal Message
