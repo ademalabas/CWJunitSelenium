@@ -4,7 +4,9 @@ package utilities;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+
 public class Log4j {
+
 
     private static Logger log = LogManager.getLogger(Log4j.class.getName());
 
@@ -18,15 +20,18 @@ public class Log4j {
         log.info("Test is Ending...");
     }
 
+
     //Info Level
     public static void info (String message) {
         log.info(message);
     }
 
+
     //Warn Level
     public static void warn (String message) {
         log.warn(message);
     }
+
     //Trace Level
     public static void trace (String message) {
         log.trace(message);

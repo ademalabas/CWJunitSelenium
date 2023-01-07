@@ -23,6 +23,7 @@ public class BaseTestReports {
 
     @Before
     public void setup(){
+
         //Driver ile ilgili her turlu initial(baslangic) islemi burada yapilir
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();

@@ -10,6 +10,7 @@ import java.time.Duration;
 
 public abstract class BaseTest {
 
+
    protected WebDriver driver;
 
    /*
@@ -33,9 +34,6 @@ oluşturduğumuz driver variable'i  için protected access modifier seçiyoruz. 
         // test sonrasinda driver kapatmak (varsa raporlari dosyalamak) icin kullanilir.
         driver.quit();
     }
-
-
-
 
 
 
