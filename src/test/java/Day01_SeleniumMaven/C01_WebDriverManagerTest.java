@@ -13,14 +13,17 @@ public class C01_WebDriverManagerTest {
 
     public static void main(String[] args) {
 
+
             // System,setProperty yerine
         // web driver manager clasini kullanarak crome driver binary lerimizi indirdik
         WebDriverManager.chromedriver().setup();
+
 
         WebDriver driver =new ChromeDriver();
         // windowsimuzu maximize ettik
         driver.manage().window().maximize();
         // goog anasayfamizi actik
+
         driver.get("https://www.google.com/");
 
         // title imizi indirdik

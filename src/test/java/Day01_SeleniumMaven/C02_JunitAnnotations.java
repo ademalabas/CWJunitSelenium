@@ -25,10 +25,12 @@ public class C02_JunitAnnotations {
         System.out.println("1.test yapiliyor");
     }
 
+
     @Test
     public void test02() {
         System.out.println("2.test yapiliyor");
     }
+
 
     @Test
     public void test03() {
@@ -40,6 +42,8 @@ public class C02_JunitAnnotations {
     public void test04() {
         System.out.println("4.test yapiliyor");
     }
+
+
 
     @Before
     public void beforeEach() {

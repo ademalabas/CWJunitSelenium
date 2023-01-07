@@ -12,14 +12,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class C03_JunitAssertions {
 
+
 //    Go to Amazon homepage.
 //    Do the following tasks by creating 3 different test methods.
 //    1- Test if the URL contains Amazon.
 //    2- Test if the title does not contain Facebook.
 //    3- Test that the Amazon logo appears in the upper left corner.
 
-   WebDriver driver;
 
+   WebDriver driver;
 
     @Before
     public void before() {
@@ -40,8 +41,6 @@ public class C03_JunitAssertions {
        // Url amazon kelimesini iceriyormu kontrol saglaniyor
         Assert.assertTrue("URL Amazon icermiyor",currentUrl.contains("amazon"));
         //Assert.assertTrue(driver.getTitle().contains("Amazon"));
-
-
 
 
     }

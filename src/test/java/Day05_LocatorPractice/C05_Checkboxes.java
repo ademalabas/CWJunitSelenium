@@ -39,6 +39,7 @@ public class C05_Checkboxes {
 //    Verify if Home checkbox is selected.
 //    Verify that "You have selected" is visible.
 
+
         //    Go to URL: https://demoqa.com/
         driver.get("https://demoqa.com/");
 
