@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 public class C03_WindowHandles extends BaseTest {
+
     @Override
     public void tearDown() {
 
