@@ -15,13 +15,6 @@ public class C03_ChromeOptions {
 
 
 
-
-
-
-
-
-
-
     @Test
     public void cromeOptions() {
         WebDriverManager.chromedriver().setup();

@@ -24,10 +24,15 @@ WebDriver driver;
     driver.manage().window().maximize();
 }
 
+
     @After
     public void tearDown() {
     driver.quit();
     }
+
+
+
+
     @Test
     public void testRadioButton(){
     //Go to URL: https://demoqa.com/radio-button

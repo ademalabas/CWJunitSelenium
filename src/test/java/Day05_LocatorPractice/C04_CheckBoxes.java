@@ -21,9 +21,7 @@ public class C04_CheckBoxes {
 //    Then verify that checkbox 1 is checked.
 
 
-
     WebDriver driver;
-
 
     @Before
     public void setUp() {
@@ -34,7 +32,6 @@ public class C04_CheckBoxes {
         driver.manage().window().maximize();
 
     }
-
 
     @After
     public void tearDown() {

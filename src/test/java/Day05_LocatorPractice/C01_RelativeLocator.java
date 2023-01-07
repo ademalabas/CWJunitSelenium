@@ -20,7 +20,6 @@ public class C01_RelativeLocator {
 // mexicoLinkTest  Verify if the link is displayed.
 
 
-
     WebDriver driver;
 
 
@@ -58,7 +57,6 @@ public class C01_RelativeLocator {
        // WebElement mexicoLink = driver.findElement(mexicoLinklocator);
       //  Assert.assertTrue(mexicoLink.isDisplayed());
         Assert.assertTrue(driver.findElement(RelativeLocator.with(By.tagName("img")).toRightOf(By.xpath("//div[@lang='en']//a[@class='us-link']"))).isDisplayed());
-
 
     }
 

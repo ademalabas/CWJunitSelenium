@@ -35,7 +35,6 @@ public class C06_RadioButtons {
 
     }
 
-
     @After
     public void tearDown() {
         // test sonrasinda driver kapatacak (varsa raporlari dosyalamak) icin kullanilir
@@ -62,7 +61,6 @@ public class C06_RadioButtons {
 
 
     }
-
 
    /* @Test
     public void test(){

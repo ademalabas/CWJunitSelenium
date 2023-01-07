@@ -30,6 +30,8 @@ public class C05_Checkboxes {
         // test sonrasinda driver kapatacak (varsa raporlari dosyalamak) icin kullanilir
         //  driver.quit();
     }
+
+
     @Test
     public void checkboxes() {
 

@@ -38,7 +38,6 @@ public class C02_RelativeLocator {
         WebElement sonucSayisi =driver.findElement(By.className("plp-info"));
         System.out.println("sonucSayisi.getText() = " + sonucSayisi.getText());
 
-
         //
         WebElement ilkUrun =driver.findElement(By.className("prd-link"));
         ilkUrun.click();
@@ -70,7 +69,6 @@ public class C02_RelativeLocator {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
-
     }
 
 
