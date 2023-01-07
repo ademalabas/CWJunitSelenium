@@ -15,9 +15,7 @@ import java.util.List;
 
 public class C02_DropDawn_Select {
 
-
     WebDriver driver;
-
 
     @Before
     public void setUp() {
@@ -35,6 +33,8 @@ public class C02_DropDawn_Select {
         // test sonrasinda driver kapatacak (varsa raporlari dosyalamak) icin kullanilir
         //  driver.quit();
     }
+
+
     @Test
     public void selectByIndex() {
         driver.get("https://demo.guru99.com/test/newtours/register.php");

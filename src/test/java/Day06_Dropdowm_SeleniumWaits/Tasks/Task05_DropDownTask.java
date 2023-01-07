@@ -32,6 +32,7 @@ public class Task05_DropDownTask {
     }
     @Test
     public void selectByIndex() {
+
         /*
         Go to URL: https://the-internet.herokuapp.com/dropdown
 Create method selectByIndexTest and Select Option 1 using index .

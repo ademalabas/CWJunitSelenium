@@ -16,7 +16,6 @@ public class Task02_MultiSelect {
 
     WebDriver driver;
 
-
     @Before
     public void setUp() {
         // Driver ile ilgili her  turlu initial baslangic isimleri burada yapilir
@@ -39,10 +38,14 @@ public class Task02_MultiSelect {
        // - https://demoqa.com/select-menu sitesine gidin
        // - Multiple select yapabileceginiz <select> elementini locate edin
        // - Birden fazla secim yapip secimlerinizi DOGRULAyin
+
+
         driver.get("https://demoqa.com/select-menu");
         WebElement dropdown = driver.findElement(By.id("cars"));
         Select multiSelect =new Select(dropdown);
+
         System.out.println("multiSelect.isMultiple() = " + multiSelect.isMultiple());
+
         multiSelect.selectByIndex(0);
         multiSelect.selectByVisibleText("Volvo");
         multiSelect.selectByIndex(2);

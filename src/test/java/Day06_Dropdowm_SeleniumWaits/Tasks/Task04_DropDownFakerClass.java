@@ -32,6 +32,7 @@ public class Task04_DropDownFakerClass {
     }
     @Test
     public void selectByIndex() {
+
         /*
         Go to URL: https://opensource-demo.orangehrmlive.com/
 Login with Username: Admin

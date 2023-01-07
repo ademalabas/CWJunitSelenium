@@ -39,6 +39,7 @@ public class C03_Alerts {
     }
     @Test
     public void alerts() throws InterruptedException {
+
         driver.get("https://demo.guru99.com/test/delete_customer.php");
 
         WebElement idInput = driver.findElement(By.name("cusid"));

@@ -17,6 +17,7 @@ public class C05_SeleniumWaits extends BaseTest {
 
     @Test
     public void webDriverWait(){
+
         // Adim 1 -> Webdriverwait objemiz olusturuldu
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 

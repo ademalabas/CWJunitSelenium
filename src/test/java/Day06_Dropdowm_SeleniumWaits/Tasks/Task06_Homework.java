@@ -17,6 +17,7 @@ public class Task06_Homework {
     @Before
     public void setUp() {
         // Driver ile ilgili her  turlu initial baslangic isimleri burada yapilir
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -30,6 +31,7 @@ public class Task06_Homework {
         // test sonrasinda driver kapatacak (varsa raporlari dosyalamak) icin kullanilir
         //  driver.quit();
     }
+
     @Test
     public void selectByIndex() {
         /*

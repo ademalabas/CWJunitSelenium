@@ -11,6 +11,7 @@ import java.time.Duration;
 
 public class Task07_AlertTask {
 
+
     WebDriver driver;
 
 
@@ -30,6 +31,8 @@ public class Task07_AlertTask {
         // test sonrasinda driver kapatacak (varsa raporlari dosyalamak) icin kullanilir
         //  driver.quit();
     }
+
+
     @Test
     public void selectByIndex() {
 

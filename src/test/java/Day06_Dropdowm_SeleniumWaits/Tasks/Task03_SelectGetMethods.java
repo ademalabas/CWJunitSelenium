@@ -47,9 +47,11 @@ public class Task03_SelectGetMethods {
         System.out.println("*** Get Options");
         selectmethods.getOptions().stream().forEach(t-> System.out.println("t.getText() = " + t.getText()));
 
+
         System.out.println("*** getFirstSelected ***");
         selectmethods.selectByVisibleText("Opel");
         selectmethods.selectByValue("volvo");// firt selected daha once oldugu ivin secilir
+
 
         WebElement selectedoptions= selectmethods.getFirstSelectedOption();
         System.out.println("get first selected = " + selectedoptions.getText());

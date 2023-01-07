@@ -45,10 +45,14 @@ public class Task01_SelectMethods {
         //           * Black  (text)
         //    seceneklerini secin
 
+
         driver.get("https://demoqa.com/select-menu");
+
         WebElement dropdown = driver.findElement(By.xpath("//select[@id=\"oldSelectMenu\"]"));
         Select select1 =new Select(dropdown);
+
         System.out.println("select1.isMultiple() = " + select1.isMultiple());
+
         select1.selectByIndex(3);
         select1.selectByValue("4");
         select1.selectByVisibleText("Black");
