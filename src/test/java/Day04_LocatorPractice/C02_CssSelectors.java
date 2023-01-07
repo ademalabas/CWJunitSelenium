@@ -24,11 +24,7 @@ public class C02_CssSelectors {
 // 2. Method: DeleteButtonsAndValidate()
 
 
-
-
-
 WebDriver driver;
-
 
 
     @Before
@@ -40,9 +36,7 @@ WebDriver driver;
         driver.manage().window().maximize();
 
 
-
     }
-
 
 
     @After
@@ -64,8 +58,6 @@ WebDriver driver;
 
         //deleteButtonsAndValidate metodu ile 40 buton silinir ve kontrol edilir
         deleteButtonsAndValidate(40);
-
-
 
 
     }

@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class Task01 {
+
 //https://id.heroku.com/login sayfasına gidiniz.
 //Bir mail adresi giriniz.
 //Bir password giriniz.
@@ -53,6 +54,8 @@ public class Task01 {
         //Login butonuna tıklayınız.
         WebElement logIn = driver.findElement(By.xpath("//button[@value='Log In']"));
         logIn.click();
+
+
 //"There was a problem with your login." text görünür ise "Kayıt Yapılamadı" yazdırınız.
 
         WebElement alert = driver.findElement(By.xpath("//div[@class='alert alert-danger']"));

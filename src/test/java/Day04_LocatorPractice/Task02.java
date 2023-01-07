@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class Task02 {
+
 //Navigate to https://testpages.herokuapp.com/styled/index.html
 // Click on Calculate under Micro Apps.
 // Type any number in the first input.
