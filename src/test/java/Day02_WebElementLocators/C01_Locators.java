@@ -14,10 +14,12 @@ import java.time.Duration;
 import java.util.List;
 
 public class C01_Locators {
+
     WebDriver driver;
 
     @Before
     public void setUp() {
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
 
@@ -29,7 +31,6 @@ public class C01_Locators {
         // driver imiz maximize edildi
 
         driver.manage().window().maximize();
-
 
     }
 

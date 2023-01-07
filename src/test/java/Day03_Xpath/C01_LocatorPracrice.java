@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class C01_LocatorPracrice {
+
 //    Go to https://www.linkedin.com/
 //    When we write an e-mail without the @ sign in the e-mail box and press enter.
 //    Let's test the "Invalid email address" warning.
@@ -23,6 +24,7 @@ public class C01_LocatorPracrice {
 
     @Before
     public void setUp() {
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
 
@@ -53,6 +55,8 @@ public class C01_LocatorPracrice {
            // 2. adim email alanina @ sembolu bulunmayan bir email adresi gir
             driver.findElement(By.xpath("//input[@id='session_key']"))
                     .sendKeys("ademalabas"+ Keys.ENTER);
+
+
         // 3. Adim Hata mesejinin goruntulendigini dogrula
             WebElement alertmessage =driver.findElement(By.xpath("//p[@class='alert-content']"));
             Assert.assertTrue(alertmessage.isDisplayed());

@@ -53,16 +53,13 @@ WebDriver driver;
         // xpath locator -->//input[@id='session_key']
         WebElement email = driver.findElement(By.xpath("//input[@class='input__input'and @name='session_key']"));
         email.sendKeys("Adem multiple xpath kavramini kavradi");
-
     }
-
 
     @Test
     public void OrXpath(){
         // xpath locator -->///input[@id='session_key' or @id = 'session_password']
         WebElement email = driver.findElement(By.xpath("//input[@id='session_key' or @id = 'session_password']"));
         email.sendKeys("Adem multiple xpath kavramini kavradi");
-
     }
 
 
@@ -73,7 +70,6 @@ WebDriver driver;
         email.sendKeys("Adem multiple xpath kavramini kavradi");
 
     }
-
 
     @Test
     public void startWithpath(){

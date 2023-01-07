@@ -12,6 +12,7 @@ import java.time.Duration;
 
 public class C02_Practice {
 
+
 //    Create the driver with BeforeClass and make it static inside the class.
 //    Go to http://www.google.com
 //    Type "Green Mile" in the search box and print the number of results.
@@ -35,7 +36,6 @@ public class C02_Practice {
         //sayfamizin yuklenmesi beklendi
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-
     }
 
 
@@ -48,7 +48,6 @@ public class C02_Practice {
     }
     @After
     public void afterEach() {
-
     }
 
     @AfterClass
@@ -56,7 +55,6 @@ public class C02_Practice {
 
         // driver imiz kapatildi
          driver.quit();
-
     }
 
     @Test
