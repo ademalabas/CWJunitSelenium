@@ -27,8 +27,10 @@ public class C02_WriteExcelExample02 {
 
 
 
+
     @Test
     public void changeExcelData() throws IOException {
+
 
         //Dosyamizin path ini aldik
         String filePath = "src\\test\\java\\resources\\excelData.xlsx";
@@ -38,10 +40,13 @@ public class C02_WriteExcelExample02 {
 
         //File imizi actik
         FileInputStream fis = new FileInputStream(file);
+
         //Workbook umuzu olusturduk
         Workbook wb = WorkbookFactory.create(fis);
+
         //Sheetimizi olusturduk
         Sheet informationData = wb.getSheet("informationData");
+
         // total row sayisini bulduk ve yazdirdik
         int totalRowsUsed = informationData.getLastRowNum() - informationData.getFirstRowNum();
         System.out.println("Total rows = " + totalRowsUsed);

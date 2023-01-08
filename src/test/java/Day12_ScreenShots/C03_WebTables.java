@@ -44,6 +44,7 @@ Get all the values of a Dynamic Table
 
 
             for (int j = 1; j<=sutunSayisi; j++){
+
                 // her satirin sutunu
                 By locator = By.xpath(".//tr["+ i +"]//td[" + j + "]");
                 WebElement tableData = table.findElement(locator);

@@ -14,7 +14,9 @@ public class C01_Screenshots {
 
     @Test
     public void fullPageScreenshot() throws IOException {
+
         WebDriverManager.firefoxdriver().setup();
+
         WebDriver driver = new FirefoxDriver();
 
         driver.get("https://www.amazon.com.tr/");
