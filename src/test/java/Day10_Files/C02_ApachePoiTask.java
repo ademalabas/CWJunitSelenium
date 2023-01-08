@@ -15,6 +15,7 @@ public class C02_ApachePoiTask {
     @Test
     public  void apacheTask() throws IOException {
 
+
     /*
     Add the excel file on the resources folder.
 Open the file.
@@ -84,6 +85,7 @@ Print country, area key value pairs as map object.
         // Her bir satirdaki ulke ve yuzolcumu degerlerini map imizin icerisine yerlestirdik.
         countryAreas.put(country,area);
     }
+
 
     // Map imizi yazdiriyoruz
     System.out.println(countryAreas);
