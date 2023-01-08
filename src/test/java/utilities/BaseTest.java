@@ -20,6 +20,7 @@ oluşturduğumuz driver variable'i  için protected access modifier seçiyoruz. 
     */
 
 
+
     @Before
     public void setup(){
         //Driver ile ilgili her turlu initial(baslangic) islemi burada yapilir
@@ -28,6 +29,7 @@ oluşturduğumuz driver variable'i  için protected access modifier seçiyoruz. 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
     }
+
 
     @After
     public void tearDown(){
