@@ -17,8 +17,12 @@ public class C03_RobotClass extends BaseTest {
         // test sonrasinda driver kapatmak (varsa raporlari dosyalamak) icin kullanilir.
         //driver.quit();
     }
+
+
     @Test
     public void test() throws AWTException, InterruptedException {
+
+
         driver.get("https://demo.guru99.com/test/upload/");
         WebElement input = driver.findElement(By.id("uploadfile_0"));
         input.sendKeys("C:\\Users\\destiny\\Desktop\\CWJunitSelenium\\src\\test\\java\\resources\\robot.txt");

@@ -28,6 +28,8 @@ public class C02_ScrolWithJSExecutor extends BaseTest {
      */
     @Test
     public void doubleClickButton() {
+
+
         driver.get("https://api.jquery.com/dblclick/");
         driver.switchTo().frame(0);
         WebElement blueBox =driver.findElement(By.cssSelector("body>div"));

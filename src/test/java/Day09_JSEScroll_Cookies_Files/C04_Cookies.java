@@ -22,6 +22,8 @@ Delete All Cookies.
 
     @Test
     public void testCookies(){
+
+
         driver.get("https://kitchen.applitools.com/ingredients/cookie");
         System.out.println("Test get cookie");
         Cookie cookie =driver.manage().getCookieNamed("protein");// cookie isimle cagirildi
@@ -65,6 +67,8 @@ Delete All Cookies.
 
     @Test
     public void deletecookie() {
+
+
         driver.get("https://kitchen.applitools.com/ingredients/cookie");
         Set<Cookie> allCookies =driver.manage().getCookies();
         int numOfCookies = allCookies.size();
