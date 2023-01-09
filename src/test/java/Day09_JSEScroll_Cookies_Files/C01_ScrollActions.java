@@ -9,6 +9,8 @@ public class C01_ScrollActions extends BaseTest {
 
     @Test
     public void scrollPageUpDown() throws InterruptedException {
+
+
         driver.get("https://amazon.com");
         Actions act = new Actions(driver);
         Thread.sleep(2000);
@@ -20,6 +22,8 @@ public class C01_ScrollActions extends BaseTest {
         Thread.sleep(2000);
         act.sendKeys(Keys.PAGE_UP).perform();
     }
+
+
     @Test
     public void scrollArrowUpDown() throws InterruptedException {
         driver.get("https://amazon.com");
