@@ -9,10 +9,15 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class Task01_RobotClass extends BaseTest {
+
+
+
    /* https://api.jquery.com/ sitesine gidelim
     arama alanina json yazalim
     Enter islemini robot class kullanrak yapalim
 */
+
+
 
     @Test
     public void testRobotClass() throws AWTException {
@@ -20,9 +25,11 @@ public class Task01_RobotClass extends BaseTest {
         //https://api.jquery.com/ sitesine gidelim
         driver.get("https://api.jquery.com/");
 
+
         //arama alanina json yazalim
         WebElement search = driver.findElement(By.name("s"));
         search.sendKeys("json");
+
 
         // Enter islemini robot class kullanrak yapalim
         Robot robot = new Robot();

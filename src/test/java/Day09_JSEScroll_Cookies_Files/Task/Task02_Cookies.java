@@ -27,11 +27,13 @@ deleteAllCookies.
    // Go to URL: http://facebook.com
     driver.get("http://facebook.com");
 
+
    // getCookies,
     System.out.println("Get current cookies");
     Set<Cookie>  currentCookies =driver.manage().getCookies();
     int currentCookiesCount = currentCookies.size();
     System.out.println("currentCookiesCount = " + currentCookiesCount);// 4
+
 
     //  addCookie,
     Cookie cookieSocial = new Cookie("SocialMedia","Instegram");
@@ -40,6 +42,7 @@ deleteAllCookies.
     driver.manage().addCookie(cookieSocial);
     driver.manage().addCookie(cookieQuote);
     driver.manage().addCookie(cookiePlayer);
+
     Assert.assertEquals("Trhere is no new cookies", cookieSocial.getValue(),driver.manage().getCookieNamed(cookieSocial.getName()).getValue());//passed
     Assert.assertEquals("Trhere is no new cookies", cookieQuote.getValue(),driver.manage().getCookieNamed(cookieQuote.getName()).getValue());// passed
     Assert.assertEquals("Trhere is no new cookies", cookiePlayer.getValue(),driver.manage().getCookieNamed(cookiePlayer.getName()).getValue());// passed
