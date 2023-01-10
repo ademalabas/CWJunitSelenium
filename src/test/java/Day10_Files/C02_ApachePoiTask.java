@@ -11,10 +11,8 @@ import java.util.Map;
 
 public class C02_ApachePoiTask {
 
-
     @Test
     public  void apacheTask() throws IOException {
-
 
     /*
     Add the excel file on the resources folder.
@@ -64,6 +62,7 @@ Print country, area key value pairs as map object.
 
     //    Find the number of used rows.
     System.out.println(sheet1.getPhysicalNumberOfRows()); // Satir sayisini direkt verir
+
     System.out.println(sheet1.getLastRowNum() + 1); // Son satirin indexini verir
 
     int totalRows = sheet1.getPhysicalNumberOfRows(); // Satir sayisini atadik
@@ -85,7 +84,6 @@ Print country, area key value pairs as map object.
         // Her bir satirdaki ulke ve yuzolcumu degerlerini map imizin icerisine yerlestirdik.
         countryAreas.put(country,area);
     }
-
 
     // Map imizi yazdiriyoruz
     System.out.println(countryAreas);
