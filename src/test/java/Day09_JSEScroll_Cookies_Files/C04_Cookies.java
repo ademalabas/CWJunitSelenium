@@ -75,18 +75,18 @@ Delete All Cookies.
         System.out.println("numOfCookies = " + numOfCookies);// number of cookie 2
 
 
-
-
         Cookie adddedCookie = new Cookie("drinks","ayran");// cookie olusturduk
         driver.manage().addCookie(adddedCookie);// cookie ekledik
         allCookies =driver.manage().getCookies(); // guncel cookileri dondurur
         System.out.println("allCookies.size() = " + allCookies.size());// number of cookie 3
+
 
         System.out.println("delete cookie");
         driver.manage().deleteCookie(adddedCookie);// cookie sildik
         Assert.assertNull("cookie halen var",driver.manage().getCookieNamed(adddedCookie.getName()));//Passed
         allCookies =driver.manage().getCookies(); // guncel cookileri dondurur
         System.out.println("allCookies.size() = " + allCookies.size());// number of cookie 2
+
 
         driver.manage().deleteAllCookies(); //browserdan hepsi sildik
         allCookies = driver.manage().getCookies(); // sayfada var olan cookieleri dondurur
