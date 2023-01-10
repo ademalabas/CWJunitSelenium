@@ -3,10 +3,10 @@ package Day10_Files;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+
 public class C07_FileExist {
 
     public static void main(String[] args) {
-
 
         System.out.println(System.getProperty("user.dir"));// projenin yolunu8 verir
           String projectRoot =System.getProperty("user.dir");// Bulmak istedigimiz
