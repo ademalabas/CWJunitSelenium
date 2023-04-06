@@ -96,5 +96,4 @@ public class C01_Locators {
         WebElement email = driver.findElement(By.xpath("//*[@id=\"session_key\"]"));
         email.sendKeys("Adem relative xpath kavramini kavradi");
     }
-
 }
