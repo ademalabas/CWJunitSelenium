@@ -62,7 +62,6 @@ public class C01_Locators {
         WebElement email = driver.findElement(By.className("input__input"));
         email.sendKeys("Class locator Test");
     }
-
     @Test
     public void tagLocator() {
         //tag locator -->input
@@ -70,7 +69,6 @@ public class C01_Locators {
         WebElement email = emaillist.get(1);
         email.sendKeys("Tag locator Test");
     }
-
     @Test
     public void LinlTestLocator() {
         // link test locator -->forgot-password
@@ -78,7 +76,6 @@ public class C01_Locators {
         forgotPSWd.click();
 
     }
-
     @Test
     public void partiallinkTextLocator() {
         // link test locator -->forgot-password
