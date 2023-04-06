@@ -55,9 +55,7 @@ public class C01_Locators {
         //name locator -->session_password
         WebElement password = driver.findElement(By.name("session_password"));
         password.sendKeys("ebikgabik");
-
     }
-
     @Test
     public void classLocator() {
         //class locator -->input__input
