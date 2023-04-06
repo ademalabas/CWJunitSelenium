@@ -61,8 +61,6 @@ WebDriver driver;
 
 
     }
-
-
     public void createElements(int amount){
         WebElement addElementButton = driver.findElement(By.cssSelector("button[onclick='addElement()']"));
         for (int i = 0; i < amount; i++){
