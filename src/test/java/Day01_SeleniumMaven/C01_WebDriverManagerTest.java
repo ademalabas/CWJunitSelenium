@@ -18,6 +18,9 @@ public class C01_WebDriverManagerTest {
         WebDriverManager.chromedriver().setup();
 
 
+
+
+
         WebDriver driver =new ChromeDriver();
         // windowsimuzu maximize ettik
         driver.manage().window().maximize();
