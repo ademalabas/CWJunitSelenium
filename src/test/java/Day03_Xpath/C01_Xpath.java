@@ -19,6 +19,9 @@ WebDriver driver;
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
 
+
+
+
         //sayfamizin yuklenmesi beklendi
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
